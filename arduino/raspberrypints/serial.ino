@@ -83,7 +83,7 @@ void sendKickedMsg(uint8_t addr, int pinNum) {
   }
   // Power down the radio.  Note that the radio will get powered back up
   // on the next write() call.
-  radio.powerDown();
+  //radio.powerDown();
 
   // Be sure to flush the serial first before sleeping, so everything
   // gets printed properly
