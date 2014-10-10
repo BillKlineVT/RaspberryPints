@@ -47,7 +47,7 @@ if($db){
 		//$qry = "INSERT INTO pours(tapId,amountPoured,batchId,pinAddress,pulseCount,pulsesPerLiter,liters) values ('".$taps[0]."','".$amount."','".$taps[1]."','".$PIN."','".$PULSE_COUNT."','".$taps[2]."','".$PULSE_COUNT / $taps[2]."')";
 
 		// Inserts in to the pours table 
-		$qry = "INSERT INTO pours(tapId, pinId, amountPoured, pulses) values ('".$taps[0]."','".$PIN."','".$amount."','".$PULSE_COUNT."')";
+		$qry = "INSERT INTO pours(tapId, pinId, amountPoured, pulses, createdDate) values ('".$taps[0]."','".$PIN."','".$amount."','".$PULSE_COUNT."', NOW())";
 		mysql_query($qry);
 	
 	
